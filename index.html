@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P4-TM17</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 17 4to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Cutebot & GCS: Programar el seguidor de línea con sensores Infrarrojos (IR).</li>
+                                        <li>A.I. Lens (Line Tracking): Usar `Switch function as Line` y `Image contains line's direction` para seguir una línea con visión IA.</li>
+                                        <li>IA (Conceptual): Comparar los métodos de seguimiento de línea (IR vs. Cámara) y analizar sus ventajas y desventajas.</li>
+                                        <li>Parte de la Currícula de IA cubierta: Alfabetización Adicional: Múltiples Sensores (dos formas de ver líneas).</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes exploren y programen al Cutebot para seguir una línea utilizando tanto sus sensores IR como la Smart A.I. Lens, y que comparen conceptualmente las ventajas y desventajas de cada método.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
+                                        <li>⚡ Actividad 3: AI GYM</li>
+                                        <li>⚡ Actividad 4: Brain Spark</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Programa(s) en MakeCode que permitan al Cutebot seguir una línea, ya sea utilizando los sensores IR, la A.I. Lens, o ambos.</li>
+                                        <li>Participación activa en la discusión comparativa sobre las ventajas y desventajas de cada tecnología de sensor.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                        <li>Smart A.I. Lens (1 por cada 2 estudiantes).</li>
+                                        <li>Robots Cutebot (1 por cada 2 estudiantes).</li>
+                                        <li>Pista con línea negra para seguir.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (MakeCode).</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (Micro:bits, A.I. Lens, Cutebots).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional el proyecto de ejemplo (un Cutebot siguiendo una línea con IR y/o la A.I. Lens) para la demostración en la Actividad 2.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Generar conexión emocional, motivar y contextualizar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos con energía, introduce brevemente la emoción de la misión del día sin revelar detalles, e instrúyeles claramente cómo activar a Xolo con sus gustos/intereses.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, navegantes de precisión! ¿Alguna vez han visto esos robots en las fábricas que siguen líneas pintadas en el suelo para moverse? Hoy vamos a convertir a nuestro Cutebot en un experto seguidor de líneas, ¡y lo haremos de dos maneras diferentes! Una usando sus 'ojos' especiales para líneas (sensores IR) y otra usando su 'cámara inteligente' (la A.I. Lens). Antes de empezar, vamos a activar a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. Por ejemplo: 'Hola Xolo, soy [Nombre] y mis gustos son [los laberintos y la tecnología]'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo ya les está respondiendo y está listo para esta misión de navegación. Si alguien no ha recibido respuesta de Xolo, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar claramente el objetivo de aprendizaje y establecer una meta concreta.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: I Can Statement + Ejemplificación ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 3). Introduce el concepto principal de la sesión con una analogía o ejemplo del mundo real, preparando el terreno para el objetivo de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Muestra los sensores IR debajo del Cutebot). Nuestro Cutebot tiene unos sensores especiales aquí abajo, llamados sensores infrarrojos o IR. Pueden detectar si están sobre una superficie clara o una oscura, como una línea negra sobre un fondo blanco. Pero también, ¡nuestra A.I. Lens tiene un modo para detectar y seguir líneas con su cámara! Así que hoy exploraremos ambas formas. Compararemos cómo funciona cada método. ¿Cuál creen que será mejor o más fácil de programar?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Descripción General ⏰ 2 minutos</h3>
+                            <p>(El profesor muestra SU Cutebot con SU proyecto de ejemplo ya cargado y funcionando. Esta es una demostración en vivo, no se proyecta diapositiva).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que vean una de las muchas cosas que podemos hacer hoy, les voy a mostrar un proyecto que yo mismo preparé. Miren mi Cutebot: (Muestra el dispositivo funcionando, siguiendo una línea con uno de los métodos). Yo le pedí que (describe aquí brevemente la acción principal de tu proyecto, ej: 'siguiera esta línea negra de la forma más precisa posible'). ¿Ven cómo podemos usar los conceptos de hoy para crear un robot navegante? Para lograr esto, mi 'vibe' fue simple: quería que (describe aquí tu objetivo, ej: 'mi Cutebot no se saliera del camino').</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Desglose (Sensores) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement' y conecta el ejemplo mostrado con lo que los alumnos crearán.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Así como mi Cutebot puede seguir una línea, ¡ustedes hoy harán algo muy similar! Al final de la clase, podrán decir con confianza: <strong>'Yo puedo hacer que mi Cutebot siga una línea de dos maneras diferentes y puedo pensar en las ventajas y desventajas de cada método.'</strong> ¡Vamos a ello!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Introducir conceptos clave de IA o programación de forma amigable y visual para ambos métodos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: AI GYM ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da una instrucción clara a los alumnos sobre cómo pedir la información a Xolo, incluyendo su perfil y los conceptos del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, es momento de entrar al A.I. GYM! 🧠💪 Xolo, nuestro copiloto IA, nos va a explicar los dos métodos para seguir líneas: con los sensores IR y con la A.I. Lens. También hablaremos de por qué tener múltiples sensores es una gran idea en robótica. Para que la explicación sea personalizada para ustedes, escriban en el chat: 'Mi perfil es [escribe aquí tus gustos/intereses] y quiero que me enseñes sobre los dos métodos para seguir líneas y el uso de múltiples sensores'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: AI GYM ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositivas 6, 7 y 8). Monitorea a los alumnos mientras interactúan con Xolo y reciben la explicación. Fomenta que hagan preguntas de seguimiento.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está explicando que los sensores IR son como interruptores simples que detectan blanco o negro, mientras que la A.I. Lens usa su cámara para 'ver' la línea y entender su dirección. También les está contando que usar diferentes sensores para la misma tarea hace a los robots más confiables y flexibles.</p>
+                                <p class="dialogue assistant">Para que vean cómo esta lógica se convierte en un plan, Xolo podría mostrarles un GCS para cada método:</p>
+                                <p class="dialogue assistant"><strong>Para seguir la línea con los sensores IR:</strong></p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+POR SIEMPRE:
+    fijar variable "estado_SI" a cutebot_leer_sensor_linea_izquierdo()
+    fijar variable "estado_SD" a cutebot_leer_sensor_linea_derecho()
+
+    SI (estado_SI == "NEGRO" Y estado_SD == "BLANCO"):
+        cutebot_motor_izquierdo(20)
+        cutebot_motor_derecho(60)
+    SINO SI (estado_SI == "BLANCO" Y estado_SD == "NEGRO"):
+        cutebot_motor_izquierdo(60)
+        cutebot_motor_derecho(20)
+    SINO SI (estado_SI == "NEGRO" Y estado_SD == "NEGRO"):
+        cutebot_avanzar(50)
+    SINO:
+        cutebot_detener()
+    FIN SI
+                                </pre>
+                                <p class="dialogue assistant"><strong>Y para seguir la línea con la A.I. Lens:</strong></p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    Initialize AI-Lens
+    Switch function as Line
+POR SIEMPRE:
+    fijar variable_texto "direccion_linea" a Image contains line's direction
+    SI (direccion_linea == "IZQUIERDA_FUERTE"):
+        cutebot_girar_izquierda(70)
+    SINO SI (direccion_linea == "DERECHA_FUERTE"):
+        cutebot_girar_derecha(70)
+    SINO SI (direccion_linea == "RECTO"):
+        cutebot_avanzar(50)
+    SINO:
+        cutebot_detener()
+    FIN SI
+                                </pre>
+                                <p class="dialogue assistant">Si algo no queda claro, ¡recuerden que pueden preguntarle directamente a Xolo! Prueben con: <br>
+                                <strong>* 'Xolo, ¿qué método sería mejor para una línea con curvas muy cerradas?'</strong><br>
+                                <strong>* '¿Puedes explicarme con una historia sobre [sus gustos/intereses] por qué un robot de exploración usaría más de un tipo de sensor?'</strong><br>
+                                <strong>* '¿La A.I. Lens podría seguir una línea de color azul en lugar de negra?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Poner en práctica el aprendizaje a través de una experiencia de codificación creativa guiada por la "vibe" del alumno, para ambos métodos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Brain Spark ⏰ 1 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Presenta la actividad como la fase creativa principal de la sesión, generando entusiasmo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, genios! Ahora vamos a la parte más emocionante de nuestra misión, el Brain Spark. Aquí es donde cada uno de ustedes se convierte en ingeniero de robótica, probando diferentes tecnologías para resolver un mismo problema.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Brain Spark ⏰ 2 minutos</h3>
+                            <p>Anima a los alumnos a pensar en su 'vibe' y decidir qué método probarán primero. Recuerda a las parejas que el material se comparte y deberán alternar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Hoy el desafío es doble. Su 'vibe' es lograr que el Cutebot siga la línea. Pueden elegir empezar con el método de los sensores IR de abajo, o con el método de la A.I. Lens. Tómense un minuto para decidir por cuál empezar. Recuerden que están compartiendo el material, así que pónganse de acuerdo con su pareja. Si necesitan ideas, pregunten a Xolo: 'Exploremos ideas juntos para hacer un seguidor de líneas'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Brain Spark ⏰ 4 minutos</h3>
+                            <p>Guía a los alumnos sobre cómo pedir a Xolo el GCS para cada método, recordándoles los ejemplos ya vistos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Ya tienen su 'vibe' y decidieron qué método probar? ¡Genial! Ahora, pidan a Xolo el GCS específico. Por ejemplo, pueden decirle: 'Mi vibe es que el Cutebot siga la línea usando los sensores IR. Dame el GCS para eso.' O 'Mi vibe es que siga la línea con la A.I. Lens. Dame el GCS.' Xolo les dará un plan detallado como los que vimos en el A.I. GYM, ¡listo para que lo programen!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Brain Spark ⏰ 12 minutos</h3>
+                            <p>Da tiempo a los alumnos para que traduzcan el GCS a bloques, prueben en la pista y comparen los resultados. Recordarles alternar el uso del material.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Manos a la obra, ingenieros! Tomen el GCS del método que eligieron y constrúyanlo con bloques en MakeCode. Prueben en la pista y observen cómo se comporta el Cutebot. Recuerden que están trabajando en parejas, así que asegúrense de tomar turnos para programar y probar. Si el GCS de Xolo no funciona a la primera, ¡es una oportunidad para depurar! Descríbanle el error a Xolo para que puedan mejorar juntos. ¡Si terminan rápido, prueben el otro método y comparen!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Brain Spark ⏰ 1 minutos</h3>
+                            <p>Ofrece desafíos adicionales para los alumnos que terminen antes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Ya terminaron y su seguidor de línea funciona? ¡Felicidades! Aquí tienen un desafío extra: ¿Qué método funciona mejor en una curva muy cerrada? ¿Y en una línea con interrupciones? ¡Experimenten y descubran cuál es más robusto! ¡Consulten con Xolo cómo podrían mejorar la precisión de cada método!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir, reflexionar y consolidar el aprendizaje, comparando los métodos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Presenta la actividad como el momento de compartir y celebrar los proyectos, explicando brevemente la dinámica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, creadores! Han hecho un trabajo increíble en el Brain Spark. Ahora es el momento de compartir sus inventos en nuestro Gnius STORM. Esta es la parte donde aprendemos unos de otros. La dinámica será simple: primero pensaremos un poco en nuestro propio trabajo, luego lo compartiremos en parejas, y finalmente reflexionaremos todos juntos. ¿Listos?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
+                            <p>Da a los alumnos un momento corto para la reflexión individual sobre su propio proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto. Antes de mostrar su proyecto, tómense 30 segundos para pensar en silencio. Miren su creación y reflexionen: <strong>¿Qué método usaron? ¿Fue fácil de programar? ¿Siguió la línea de forma suave o brusca? ¿Están orgullosos del resultado?</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Indica a los alumnos que se junten en parejas, intercambien sus dispositivos y expliquen sus proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Ahora, júntense con su compañero. Por turnos, cada uno va a mostrar su Cutebot y explicará: <strong>'Mi Cutebot sigue la línea usando [el método IR / la A.I. Lens]. Mi 'vibe' era que siguiera la línea de esta manera...'</strong> El compañero debe observar con atención cómo se comporta el robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
+                            <p>Guía a los alumnos para que se den retroalimentación mutua, usando plantillas de frases para asegurar que sea constructiva.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la parte más importante de aprender en equipo: la retroalimentación. Después de ver el proyecto de su compañero, díganle algo positivo y comparen los resultados. Usen estas frases:<br>
+                                <strong>* 'Lo que más me gustó de cómo tu robot siguió la línea fue...'</strong><br>
+                                <strong>* '¡Qué buena 'vibe' que lograste que girara tan suavemente en las curvas!'</strong><br>
+                                <strong>* 'Mi robot, con el otro método, [describe cómo se comportó]. ¿Crees que tu método fue mejor para esta pista?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11). Cierra la sesión conectando la experiencia práctica con los objetivos de aprendizaje y los conceptos clave del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Han hecho un trabajo excelente como ingenieros de robots explorando dos formas de resolver el mismo problema! Vieron que no siempre hay una única solución 'correcta'. A veces, una combinación de sensores (como tener IR para detección cercana y una cámara para visión lejana) es la mejor estrategia, ¡así es como funcionan muchos robots avanzados!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
